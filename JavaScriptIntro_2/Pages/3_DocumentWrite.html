@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script>
+        //JavaScript ile bir sayfanın icerigini komple degiştirebilirsiniz
+
+        //document.write() => bir dökümanın icerisinde ne varsa yok et ve write'a verdigimiz string argümanını yaz demektir...write() fonksiyonu string bir argüman alır ve icerisine yazdıgınız HTML elementlerini de algılar
+
+
+        //document.write() ilk sayfada kullanıldığında unutmayın ki sizin karşınızda yeni bir döküman vardır ve tasarım onun üzerinden gerçekleşir...Lakin sonra devam ettiginizde dokument.write yeni bir dökümanı otomatik olarak acmaktansa varolan dökümanın üzerine append eder(ekleme yapar)...Eger bunu istemiyorsanız o zaman document.open() ifadesini elle yazmalısınız...
+
+
+        function IcerikDegistir() {
+            document.write("<h1> Burası degiştirilmiş bir dökümantasyondur </h1> <hr/>  <p> Burası yeni bir paragraftır </p> <hr/>   <ul> <li> Encapsulation </li> <li> Inheritance </li> <li> Polymorphism</li> <li> Abstraction </li> </ul> <hr/> <button onclick='YineDegistir()'> Yine degiştir </button>");
+        }
+
+
+        function YineDegistir() {
+            document.open();
+            document.write("<table border ='1'> <thead> <tr> <td> Isim </td> <td> SoyIsim </td> <td> Yas </td> </tr> </thead> <tbody> <tr> <td> Cagri </td> <td>Yolyapar </td> <td> 35 </td> </tr>  </tbody> </table>");
+
+
+           
+        }
+
+
+    </script>
+
+
+
+</head>
+<body>
+
+
+    <p>Bu orijinal Tasarım!!!</p>
+
+
+    <table border='1'>
+        <thead>
+            <tr>
+                <th>Isim</th>
+                <th>SoyIsim</th>
+                <th>Yas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cagri</td>
+                <td>Yolyapar</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>Cagri</td>
+                <td>Yolyapar</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>Cagri</td>
+                <td>Yolyapar</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>Cagri</td>
+                <td>Yolyapar</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>Cagri</td>
+                <td>Yolyapar</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>Cagri</td>
+                <td>Yolyapar</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>Cagri</td>
+                <td>Yolyapar</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>Cagri</td>
+                <td>Yolyapar</td>
+                <td>35</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <hr />
+
+    <button onclick="IcerikDegistir()">
+        Degiştir
+    </button>
+
+</body>
+</html>

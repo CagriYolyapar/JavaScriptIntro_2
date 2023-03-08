@@ -68,6 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Pages\1_JSIntro.html" />
+    <Content Include="Pages\2_JavaScript.html" />
+    <Content Include="Pages\3_DocumentWrite.html" />
+    <Content Include="Pages\4_GetElements.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +84,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="JSFiles\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

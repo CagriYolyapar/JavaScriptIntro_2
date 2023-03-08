@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script>
+
+        //Yorum satırıdır
+
+        /*
+        
+
+          var n = 12;
+
+          n = "ASSADAS";
+
+
+
+          Deneme(item)
+          {
+             if(......) return 12;
+             else alert("Hello World");
+          
+          }
+
+          JavaScript fonksiyonel bir dildir...JavaScript'te degişkenlerin tipleri hep var veya let olarak yazılır. Dynamically typed bir dildir...
+
+
+          JavaScript fonksiyonlarınızın geriye dönüs tipleri belirtilemez...
+
+          JavaScript'te ifadelerinizin sonuna noktalı virgül koymak zorunda degilsiniz; fakat koydugunuz takdirde daha hızlı render edilmesini saglarsınız...
+
+          JavaScript'te metinsel ifadeler dilerseniz tek,dilerseniz cift tırnak arasına yazılabilir
+        
+        
+        
+        */
+
+      
+
+        function Selamla() {
+
+
+            if (true) {
+                var b = "Cagri"; //eger bu degişken let olarak tanımlansaydı dısarıdaki alert tarafından görülemezdi
+              
+            }
+
+            alert("Hello World " + b);
+           
+        }
+
+
+
+
+
+
+        function MesajGoster() {
+            alert(b); //Baska bir fonksiyonda olusturulan degişken bu lokal alan tarafından dogal olarak görülemeyecektir...
+        }
+
+
+        function Sor() {
+            //confirm fonksiyonu size yes ve no butonu olan bir mesaj kutusu cıkartır...Ve geriye deger döndüren bir fonksiyondur...
+
+          
+
+          
+
+            let result = confirm("Silmek istediginize emin misiniz?");
+
+            if (result) {
+                alert("Silme onaylandı");
+
+            }
+            else {
+                alert("İşlem iptal edildi");
+            }
+        }
+
+
+
+
+    </script>
+
+
+
+
+
+</head>
+<body>
+   
+
+    <button onclick="Selamla()">
+        Tıkla!!!
+    </button>
+
+    <button onclick="Sor()">
+        Sil
+    </button>
+
+</body>
+</html>
